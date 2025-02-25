@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+form{
+
+    border:solid white;
+    width: 30%;
+    margin: 60px auto ;
+    padding: 30px;
+    height: 120%;
+    box-shadow:10px 10px 10px 10px rgb(224, 218, 218), -10px 10px 10px 10px rgb(216, 212, 212); 
+    ;
+}
+    .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+    
+
+#name{
+            padding:8px 12px;
+            width: 90%;
+            border: solid 1px;
+            margin: 5px 0;
+
+}
+
+
+            
+#email{
+    width: 90%;
+    border: solid 1px;
+    padding: 8px 12px;
+    margin: 5px 0 ;
+}
+#password{
+    width: 90%;
+    border: solid 1px;
+    padding: 8px 12px;
+    margin: 5px 0;
+
+}
+  
+#submit_button{
+                background: none;
+                color: white;
+                background-color: black;
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 12px 8px;
+                border: none;
+                width: 90%;
+            }
+            .icon{
+                font-size: 20;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                display: flex; gap: 50px;
+            }
+           
+
+
+</style>
+<body>
+
+    
+    <form>
+        <p>Already have an account? <a href="login.html" style="color: black;" >Sign In</a></p>
+    
+    <h1> Sign up</h1>
+    <br>
+    <br>
+        <label for ="name">Name</label>
+        <br>
+        
+        <input type="text" id="name" placeholder="Enter name"/>
+            <br>
+            <br>
+        <label for "email">Email address</label>
+        <br>
+        <input type="email" id="email" placeholder="Enter email address"/>
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" placeholder="password" />
+        <br>
+        <br>
+        <br>
+        <input type="checkbox" id="checkbox"/><label for="checkbox">I've Read And Agree With <b> The Terms of services</b> And <b>Our Privacy Policy</b></label>
+        <br>
+        <br>
+        <button type="submit"id="submit_button">Sign Up</button>
+        <h2 class="hr-lines"> Or Sign Up With</h2>
+
+    
+    <div class="icon">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-facebook"></i>
+
+
+    </div>
+</form>
+</body>
+</html>

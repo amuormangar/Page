@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <style>
+        form{
+            border: solid white;
+            margin: 60px auto;
+            width: 30%;
+            height: 190%;
+            padding: 30px;
+            box-shadow: 10px 10px 10px 10px rgb(218, 212, 212), -10px 10px 10px 10px rgb(228, 224, 224); 
+
+
+
+            .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+
+
+        }
+        #submit_button{
+            background: none;
+                color: white;
+                background-color: black;
+                cursor: pointer;
+                border-radius: 10px;
+                padding: 12px 8px;
+                border: none;
+                width: 95%;
+                align-self: center;
+                text-align: center;
+
+
+        }
+
+        #email{
+    width: 90%;
+    border: solid 1px;
+    padding: 8px 12px;
+    margin: 5px 0 ;
+}
+#password{
+    width: 90%;
+    border: solid 1px;
+    padding: 8px 12px;
+    margin: 5px 0;
+}
+        
+                .icon{
+                font-size: 20;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                display: flex; gap: 50px;
+            }
+        }
+    </style>
+   
+    
+    
+    <form action="table.html">
+        <p>Don't have an account? <a href="index.html"style="color: black;">Sign Up</a></p>
+        <h1>Sign In</h1>
+        <label for="email"> Email</label>
+    
+        
+        <br>
+        
+        <input type="email" id="email"placeholder="Enter email address"/>
+        <br>
+        <br>
+        <labelfor="password">Password</label>
+        <br>
+        <input type="password" id="password" placeholder="Enter password"/>
+
+
+        <br>
+        <br>
+
+        <input type="checkbox"/>
+        <label for ="checkbox">I've Read and Agree With <b>The Terms Of Service</b> And <b>he Terms Of Service</b></label>
+        <br>
+
+        <br>
+        <button type="submit"id="submit_button">Sign In</button>
+
+        <h2 class="hr-lines">Or Sign In With</h2>
+
+        <div class="icon">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-facebook"></i>
+    
+    
+        </div>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
